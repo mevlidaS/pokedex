@@ -1,0 +1,63 @@
+body{
+  margin: 0;
+  font-family: "Architects Daughter", cursive;
+  background-color:#012C80;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: solid 1px black;
+    background-color:rgba(0,0,0,0.1); 
+    margin-bottom: 32px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.h1{
+    color: yellow;
+}
+.logo_img{
+    width: 48px;
+    height: 48px;
+}
+.search_img{
+    width: 32px;
+    height: 32px;
+}
+.input_field{
+    height: 32px;
+   border: 2px solid red;
+   border-radius: 10px;
+}
+.input_container{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.header_btn{
+    border: unset;
+    background-color: red;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.header_btn:hover{
+    background-color: rgb(244, 120, 120);
+}
+
+@media(max-width:600px){
+    .h1{
+        display: none;
+    }
+}
+@media(max-width:350px){
+    .logo_img{
+        display: none;
+    }
+    header{
+        justify-content: center;
+
+    }
+}

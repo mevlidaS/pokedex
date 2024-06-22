@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="templates/templates.css">
+    <script src="templates/templates.js"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./img/pokemon-1536849_640.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<body onload="includeHTML(), init()">
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="main_container" id="pokemonCard">
+    </div>
+
+    <div id="button" class="button_container">
+        <button id="loadbutton" onclick="loadMorePokemons()" id="loadMore"><b>Load more</b></button>
+    </div>
+    <div id="bigImg" class="pokemon_big_info d_none" onclick="closePokemonInfo()"></div>    
+</body>
+</html>
